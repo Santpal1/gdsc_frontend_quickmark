@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Quickmark Preview</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+
+<body>
+    <div class="toolbar">
+        <button onclick = "insertText('# ', 2)">H1</button>
+        <button onclick = "insertText('## ', 3)">H2</button>
+        <button onclick = "insertText('### ', 4)">H3</button>
+        <button onclick = "insertText('**Bold**', 2)">Bold</button>
+        <button onclick = "insertText('*italic*', 1)">Italic</button>
+        <button onclick = "insertText('[Link Text](URL)', 10)">Link</button>
+        <button onclick = "insertText('![Alt Text](URL)', 10)">Image</button>
+        <button onclick = "insertText('```language\n\n```', 11)">Code Block</button>
+      </div>
+
+    <div class = "container">
+        <textarea id = "markdown-input" placeholder = "Type Markdown text here..."></textarea>
+        <div id = "markdown-output"></div>
+    </div>
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/marked/2.1.3/marked.min.js"></script>
+    <script src = "index.js"></script>
+
+</body>
+</html>
